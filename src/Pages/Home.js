@@ -44,8 +44,7 @@ const Home = () => {
             <div className="Main-title1">Join the Revolutionary</div>
             <div className="Main-title2">NSP Stacks Solutions</div>
             <div className="Main-title3">
-              It's not how much money you make, but how much money you keep, how
-              hard it works for you, and how many generations you keep it for.
+              An Investment in Knowledge Always Pays the Best Interest
             </div>
             <button className="client-btn" onClick={handleClickOpen}>
               Become Client

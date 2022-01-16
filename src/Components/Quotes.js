@@ -30,7 +30,6 @@ export default function Quotes() {
         className="mySwiper"
       >
         <SwiperSlide>{`Making money in the stock market \n is much easier than keeping it`}</SwiperSlide>
-        <SwiperSlide>{`An Investment in Knowledge \n Always Pays the Best Interest`}</SwiperSlide>
         <SwiperSlide>{`The biggest risk of all \n is not taking any Risks.`}</SwiperSlide>
         <SwiperSlide>{`In short run, Market is a voting machine. \n In long run, It's a weighing machine.`}</SwiperSlide>
         <SwiperSlide>{`The stock market is a device to transfer \n money from the impatient to the patient.`}</SwiperSlide>
