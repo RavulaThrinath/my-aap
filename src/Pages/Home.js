@@ -11,7 +11,7 @@ import Form from "../Components/Form";
 import Testimonials from "../Pages/Testimonials";
 import Quotes from "../Components/Quotes";
 import WhyWe from "../Components/WhyWe";
-import Teams from "../Components/Teams"
+import Teams from "../Components/Teams";
 
 const Home = () => {
   // Down Arrows
