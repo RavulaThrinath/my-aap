@@ -24,7 +24,7 @@ const Form = () => {
   };
   return (
     <div>
-      <form  onSubmit={sendEmail} className="formclass">
+      <form onSubmit={sendEmail} className="formclass">
         <div className="group">
           <input type="text" name="name" required />
           <span className="highlight"></span>
@@ -50,6 +50,9 @@ const Form = () => {
           <span className="bar"></span>
           <label className="required">Message</label>
         </div>
+        <button type="submit" className="Send-button" value="Send">
+          Send
+        </button>
       </form>
     </div>
   );

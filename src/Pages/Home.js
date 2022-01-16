@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import RightImage from "../Assets/RightImage.svg";
 import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
+import PropTypes from 'prop-types';
+import { styled } from '@mui/material/styles';
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 // import IconButton from '@mui/material/IconButton';
@@ -12,6 +13,50 @@ import Testimonials from "../Pages/Testimonials";
 import Quotes from "../Components/Quotes";
 import WhyWe from "../Components/WhyWe";
 import Teams from "../Components/Teams";
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
+
+//
+//
+//
+//
+const BootstrapDialog = styled(Dialog)(({ theme }) => ({
+  "& .MuiDialogContent-root": {
+    padding: theme.spacing(2),
+  },
+  "& .MuiDialogActions-root": {
+    padding: theme.spacing(1),
+  },
+}));
+
+const BootstrapDialogTitle = (props) => {
+  const { children, onClose, ...other } = props;
+
+  return (
+    <DialogTitle sx={{ m: 0, p: 2 }} {...other}>
+      {children}
+      {onClose ? (
+        <IconButton
+          aria-label="close"
+          onClick={onClose}
+          sx={{
+            position: 'absolute',
+            right: 8,
+            top: 8,
+            color: (theme) => theme.palette.grey[500],
+          }}
+        >
+          <CloseIcon />
+        </IconButton>
+      ) : null}
+    </DialogTitle>
+  );
+};
+
+BootstrapDialogTitle.propTypes = {
+  children: PropTypes.node,
+  onClose: PropTypes.func.isRequired,
+};
 
 const Home = () => {
   // Down Arrows
@@ -49,34 +94,28 @@ const Home = () => {
             <button className="client-btn" onClick={handleClickOpen}>
               Become Client
             </button>
-            <Dialog
-              className="Dialog-box"
-              style={{ color: "#ffffff" }}
-              open={open}
+            <BootstrapDialog
               onClose={handleClose}
+              aria-labelledby="customized-dialog-title"
+              open={open}
             >
-              <DialogTitle style={{ fontFamily: "Poppins", fontWeight: "600" }}>
-                Interested in becoming a Client?
-              </DialogTitle>
+              <BootstrapDialogTitle
+                id="customized-dialog-title"
+                onClose={handleClose} style={{color:"#dddddd", fontFamily: "Lato" , fontSize:"20px"}}
+              >
+                Interested in becoming a client?
+              </BootstrapDialogTitle>
               <DialogContent>
-                <DialogContentText
+              <DialogContentText
                   className="Dialog-des"
-                  style={{ fontFamily: "Lato", margin: " 0 0 30px 0" }}
+                  style={{ color:"#dddddd", fontFamily: "Lato", fontSize:"17px", margin: " 0 0 30px 0" }}
                 >
-                  Dont hesitate to contact us. We're available 24/7 <br /> and
+                  Dont hesitate to contact us. We are available <br /> 24/7 and
                   look forward to hearing from you.
                 </DialogContentText>
-                <Form />
+                <Form/>
               </DialogContent>
-              <DialogActions>
-                <button className="cancel-btn" onClick={handleClose}>
-                  Cancel
-                </button>
-                <button className="submit-btn" onClick={handleClose}>
-                  Submit
-                </button>
-              </DialogActions>
-            </Dialog>
+            </BootstrapDialog>
           </div>
           <div className="Right">
             <img src={RightImage} alt="" />
@@ -97,3 +136,32 @@ const Home = () => {
 };
 
 export default Home;
+
+// <Dialog
+// className="Dialog-box"
+// style={{ color: "#ffffff" }}
+// open={open}
+// onClose={handleClose}
+// >
+// <DialogTitle style={{ fontFamily: "Poppins", fontWeight: "600" }}>
+//   Interested in becoming a Client?
+// </DialogTitle>
+// <DialogContent>
+//   <DialogContentText
+//     className="Dialog-des"
+//     style={{ fontFamily: "Lato", margin: " 0 0 30px 0" }}
+//   >
+//     Dont hesitate to contact us. We're available 24/7 <br /> and
+//     look forward to hearing from you.
+//   </DialogContentText>
+//   <Form />
+// </DialogContent>
+// <DialogActions>
+//   <button className="cancel-btn" onClick={handleClose}>
+//     Cancel
+//   </button>
+//   <button className="submit-btn" onClick={handleClose}>
+//     Submit
+//   </button>
+// </DialogActions>
+// </Dialog>
