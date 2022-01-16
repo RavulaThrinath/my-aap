@@ -42,7 +42,7 @@
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(10px);
   transition: top .3s;
-  z-index: 10000;
+  z-index: 1000;
 }
 
 .navbar img {
@@ -279,26 +279,6 @@ B .box {
   color: #ffffff;
 }
 
-.cancel-btn {
-  position: relative;
-  min-width: 110px;
-  height: 38px;
-  color: #151618;
-  background: none;
-  font-weight: 500;
-  font-size: 12px;
-  font-family: 'Outfit', sans-serif;
-  display: inline-block;
-  border: 1.5px solid #151618;
-  margin-bottom: 20px;
-  margin-right: 0px;
-  cursor: pointer;
-  outline: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-}
-
 .submit-btn {
   position: relative;
   min-width: 110px;
@@ -317,6 +297,15 @@ B .box {
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: all 0.3s ease;
+}
+
+.MuiPaper-root {
+  padding: 30px 40px;
+  background-color: #1f2324 !important;
+  z-index: 100000000;
+}
+.MuiDialog-container {
+  z-index: 100000000;
 }
 
 @media (max-width:769px) {
@@ -784,7 +773,7 @@ textarea:focus~.bar:after {
   background: #818181;
   font-size: 17px;
   font-family: "Outfit";
-  margin-top: 35px;
+  /* margin-top: 35px; */
   border: 2px solid #818181;
   transition: .3s ease-in-out;
 }
@@ -1336,6 +1325,7 @@ textarea:focus~.bar:after {
   height: auto;
   margin-top: 150px;
 }
+
 .services-title {
   position: relative;
   font-size: 30px;
@@ -1347,6 +1337,7 @@ textarea:focus~.bar:after {
   letter-spacing: 2px;
   margin: 20px 0 40px 0;
 }
+
 .services-title::after {
   content: "";
   position: absolute;
@@ -1357,6 +1348,7 @@ textarea:focus~.bar:after {
   height: 1px;
   background: linear-gradient(to right, #97535341, #636363, #97535341);
 }
+
 .services-text {
   max-width: 75%;
   margin: auto;
@@ -1371,9 +1363,11 @@ textarea:focus~.bar:after {
   line-height: 35px;
   transition: .3s ease-in-out;
 }
+
 .services-text:hover {
   background: #0ca4a430;
 }
+
 /*  */
 /*  */
 /*  */
@@ -1782,7 +1776,7 @@ footer p {
 /*  */
 /*  */
 /*  */
- 
+
 
 .team-list {
   display: flex;
