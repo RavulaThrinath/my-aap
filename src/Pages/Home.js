@@ -5,6 +5,8 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
+// import IconButton from '@mui/material/IconButton';
+// import CloseIcon from '@mui/icons-material/Close';
 import Form from "../Components/Form";
 import Testimonials from "../Pages/Testimonials";
 import Quotes from "../Components/Quotes";
@@ -50,7 +52,7 @@ const Home = () => {
             </button>
             <Dialog
               className="Dialog-box"
-              style={{ background: "#000000", color: "#ffffff" }}
+              style={{ color: "#ffffff" }}
               open={open}
               onClose={handleClose}
             >
@@ -60,7 +62,7 @@ const Home = () => {
               <DialogContent>
                 <DialogContentText
                   className="Dialog-des"
-                  style={{ fontFamily: "Lato", margin: " 0 0 10px 0" }}
+                  style={{ fontFamily: "Lato", margin: " 0 0 30px 0" }}
                 >
                   Dont hesitate to contact us. We're available 24/7 <br /> and
                   look forward to hearing from you.
