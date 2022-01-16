@@ -645,7 +645,7 @@ B .box {
 }
 
 .left3 {
-  max-width: 40%;
+  max-width: 25%;
   display: flex;
   justify-content: space-between;
   margin: 60px 0 40px 30px;
@@ -1841,6 +1841,7 @@ footer p {
   font-weight: 200;
   font-style: italic;
   color: #ffffffbd;
+  margin: 5px 0;
 }
 
 @media (max-width:900px) {
