@@ -20,6 +20,31 @@
   --swiper-navigation-size: 30px !important;
 }
 
+/*  */
+/*Customised Scroll bar  */
+/*  */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #3c3e49;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0c6d6d;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0a8a8a;
+  border-radius: 12px;
+}
+
 
 
 /*  */
@@ -1320,7 +1345,7 @@ textarea:focus~.bar:after {
 /*  */
 /*  */
 
-.services-container {
+.services-container, .about-container {
   width: 100%;
   height: auto;
   margin-top: 150px;
@@ -1349,7 +1374,7 @@ textarea:focus~.bar:after {
   background: linear-gradient(to right, #97535341, #636363, #97535341);
 }
 
-.services-text {
+.services-text,.about-text {
   max-width: 75%;
   margin: auto;
   font-size: 25px;
@@ -1358,7 +1383,7 @@ textarea:focus~.bar:after {
   color: #e2e2e2;
   background: #0ca4a410;
   border-radius: 2px;
-  text-align: center;
+  text-align: justify;
   padding: 40px 120px 80px 120px;
   line-height: 35px;
   transition: .3s ease-in-out;
@@ -1661,7 +1686,7 @@ footer {
 
 .Social-icons:hover {
   color: #ffffff;
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 
 .Footer-map {
@@ -1688,14 +1713,22 @@ footer {
 }
 
 .footer-links {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 footer p {
   color: #c0c0c0;
   font-size: 19px;
   font-family: "Poppins";
-  margin: 25px 0 20px 0;
+  margin: 30px 0 20px 0;
+}
+.Title-link {
+  color: #c0c0c0 ;
+  text-decoration: none;
+  transition: .1s ease;
+}
+.Title-link:hover {
+  color: #a2d1d1 ;
 }
 
 .wave {

@@ -1,7 +1,7 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
 
-const Form = () => {
+const Form = (props) => {
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -50,7 +50,7 @@ const Form = () => {
           <span className="bar"></span>
           <label className="required">Message</label>
         </div>
-        <button type="submit" className="Send-button" value="Send">
+        <button onClick={props.handleClose} className="Send-button" >
           Send
         </button>
       </form>

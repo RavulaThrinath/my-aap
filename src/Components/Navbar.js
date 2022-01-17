@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { Squeeze as Hamburger } from "hamburger-react";
 import logo from "../Assets/NSP Logo.svg";
 import ReactParticle from "../Components/ReactParticle";
@@ -24,38 +24,38 @@ const Navbar = () => {
     <div>
       <ReactParticle />
       <div className="navbar" id="navbar">
-        <Link to="./">
+        <NavLink to="./">
           <img src={logo} alt="" className="logo" />
-        </Link>
+        </NavLink>
         <ul className={click ? "nav-links active" : "nav-links"}>
           <li>
-            <Link to="./" className="links" onClick={handleClick}>
+            <NavLink to="./" className="links" onClick={handleClick}>
               Home
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link to="./Services" className="links" onClick={handleClick}>
+            <NavLink to="./Services" className="links" onClick={handleClick}>
               Services
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link to="./Testimonials" className="links" onClick={handleClick}>
+            <NavLink to="./Testimonials" className="links" onClick={handleClick}>
               Testimonials
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link to="./About" className="links" onClick={handleClick}>
+            <NavLink to="./About" className="links" onClick={handleClick}>
               About
-            </Link>
+            </NavLink>
           </li>
 
           <li>
-            <Link to="./Contact" className="links" onClick={handleClick}>
+            <NavLink to="./Contact" className="links" onClick={handleClick}>
               Contact
-            </Link>
+            </NavLink>
           </li>
         </ul>
         <div className="hamburger">

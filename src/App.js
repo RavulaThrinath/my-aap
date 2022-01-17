@@ -8,6 +8,7 @@ import Contact from "./Pages/Contact";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Preloader from "./Components/Preloader"
+import Scroll from "../src/Components/ScrollTop"
 import "./App.css";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
+        <Scroll />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route path="/Services" element={<Services />}></Route>
