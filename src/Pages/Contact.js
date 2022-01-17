@@ -13,7 +13,7 @@ const Contact = () => {
   const instaURL =
     "https://instagram.com/nsp_stacks_solutions?utm_medium=copy_link";
   const whtasappURL =
-    "https://api.whatsapp.com/send?phone=9100668566&text=Hello!";
+    "https://api.whatsapp.com/send?phone=+91-9100668566&text=Hello!";
   return (
     <div className="Contact-main">
       <h1 className="contact-title">

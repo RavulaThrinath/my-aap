@@ -45,7 +45,7 @@ const Form = () => {
           <label className="required">Email</label>
         </div>
         <div className="group">
-          <input type="text" name="number" required />
+          <input type="text" name="message" required />
           <span className="highlight"></span>
           <span className="bar"></span>
           <label className="required">Message</label>
