@@ -2,8 +2,21 @@ import React from "react";
 import Team1 from "../Assets/Team1.png";
 import Team2 from "../Assets/Team2.png";
 import Team3 from "../Assets/Team3.png";
+import ScrollReveal from "scrollreveal";
 
 const Team = () => {
+  ScrollReveal().reveal(".Team-title", {
+    reset: true,
+    delay: 200,
+    origin: "left",
+    distance: "80px",
+  });
+  ScrollReveal().reveal(".founder", {
+    reset: true,
+    delay: 200,
+    origin: "bottom",
+    distance: "80px",
+  });
   return (
     <>
       <h1 className="Team-title"> meet the team</h1>

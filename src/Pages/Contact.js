@@ -1,9 +1,5 @@
 import React from "react";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { MdLocationOn, MdEmail } from "react-icons/md";
-import { FaTwitter } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
-import { IoLogoWhatsapp } from "react-icons/io";
+import { FaPhoneAlt, FaTwitter, FaEnvelope, FaInstagramSquare, FaWhatsappSquare, FaMapMarkerAlt } from "react-icons/fa";
 import Form from "../Components/Form";
 // import emailjs from "emailjs-com";
 
@@ -30,38 +26,38 @@ const Contact = () => {
           </div>
           <div className="left2">
             <div className="icons">
-              <BsFillTelephoneFill
-                style={{ color: "#ffffff", width: "16px", height: "16px" }}
+              <FaPhoneAlt
+                style={{ color: "#EEEEEE", width: "16px", height: "16px" }}
               />
               <span>+91-9100668566</span>
             </div>
             <div className="icons">
-              <MdEmail
-                style={{ color: "#ffffff", width: "16px", height: "16px" }}
+              <FaEnvelope
+                style={{ color: "#EEEEEE", width: "16px", height: "16px" }}
               />
-              <span>nspstackssolutions@gmail</span>
+              <span>nspstackssolutions@gmail.com</span>
             </div>
             <div className="icons">
-              <MdLocationOn
-                style={{ color: "#ffffff", width: "16px", height: "16px" }}
+              <FaMapMarkerAlt
+                style={{ color: "#EEEEEE", width: "16px", height: "16px" }}
               />{" "}
               <span>Medchal, Telangana</span>
             </div>
           </div>
           <div className="left3">
             <a href={instaURL} target="_blank" rel="noopener noreferrer">
-              <RiInstagramFill
-                style={{ color: "#ffffff", width: "16px", height: "16px" }}
+              <FaInstagramSquare
+                style={{ color: "#EEEEEE", width: "16px", height: "16px" }}
               />
             </a>
             <a href={twitterURL} target="_blank" rel="noopener noreferrer">
               <FaTwitter
-                style={{ color: "#ffffff", width: "16px", height: "16px" }}
+                style={{ color: "#EEEEEE", width: "16px", height: "16px" }}
               />
             </a>
             <a href={whtasappURL} target="_blank" rel="noopener noreferrer">
-              <IoLogoWhatsapp
-                style={{ color: "#ffffff", width: "16px", height: "16px" }}
+              <FaWhatsappSquare
+                style={{ color: "#EEEEEE", width: "16px", height: "16px" }}
               />
             </a>
           </div>

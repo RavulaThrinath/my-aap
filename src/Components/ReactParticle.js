@@ -16,7 +16,7 @@ const ReactParticle = () => {
           autoPlay: true,
           background: {
             color: {
-              value: "#2D2E32",
+              value: "#222831",
             },
           },
           backgroundMask: {
@@ -98,7 +98,7 @@ const ReactParticle = () => {
                 area: {
                   gradient: {
                     start: {
-                      value: "#ffffff",
+                      value: "#EEEEEE",
                     },
                     stop: {
                       value: "#000000",
@@ -190,7 +190,7 @@ const ReactParticle = () => {
               },
             },
             color: {
-              value: "#ffffff",
+              value: "#EEEEEE",
               animation: {
                 h: {
                   count: 0,
@@ -263,7 +263,7 @@ const ReactParticle = () => {
             links: {
               blink: false,
               color: {
-                value: "#ffffff",
+                value: "#EEEEEE",
               },
               consent: false,
               distance: 150,

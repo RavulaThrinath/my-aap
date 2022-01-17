@@ -2,9 +2,14 @@ import React from "react";
 import Refund from "../Assets/Get Cash.svg";
 import Returns from "../Assets/Account.svg";
 import Customer from "../Assets/Customer.svg";
-// import ScrollReveal from 'scrollreveal';
+import ScrollReveal from 'scrollreveal';
 
 const WhyWe = () => {
+  ScrollReveal().reveal(".WCU-title", {
+    delay: 300,
+    origin: "left",
+    distance: "50px"
+  });
   return (
     <div>
       <h1 className="WCU-title">Why Choose Us</h1>

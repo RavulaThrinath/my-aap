@@ -69,7 +69,7 @@ const Footer = (props) => {
           </li>
         </ul>
         <p>
-          &copy; 2022
+          &copy; 2022{" "}
           <a className="Title-link" href="./" alt="">
             NSP Stacks Solutions
           </a>{" "}

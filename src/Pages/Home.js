@@ -1,20 +1,19 @@
 import React, { useState } from "react";
-import RightImage from "../Assets/RightImage.svg";
+import RightImage from "../Assets/Right Image.png";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
-// import IconButton from '@mui/material/IconButton';
-// import CloseIcon from '@mui/icons-material/Close';
+import IconButton from '@mui/material/IconButton';
+import CloseIcon from '@mui/icons-material/Close';
 import Form from "../Components/Form";
 import Testimonials from "../Pages/Testimonials";
 import Quotes from "../Components/Quotes";
 import WhyWe from "../Components/WhyWe";
 import Teams from "../Components/Teams";
-import IconButton from '@mui/material/IconButton';
-import CloseIcon from '@mui/icons-material/Close';
+import ScrollReveal from "scrollreveal";
 
 //
 //
@@ -59,6 +58,23 @@ BootstrapDialogTitle.propTypes = {
 };
 
 const Home = () => {
+
+  ScrollReveal().reveal(".Main-title1", {
+    delay: 200,
+    origin: "left",
+    distance: "80px",
+  });
+  ScrollReveal().reveal(".Main-title2", {
+    delay: 250,
+    origin: "left",
+    distance: "80px",
+  });
+  ScrollReveal().reveal(".Main-title3", {
+    delay: 300,
+    origin: "left",
+    distance: "80px"
+  });
+
   // Down Arrows
   const [arrow, setArrow] = useState(true);
   const arrowVisible = () => {
@@ -118,7 +134,7 @@ const Home = () => {
             </BootstrapDialog>
           </div>
           <div className="Right">
-            <img src={RightImage} alt="" />
+            <img className="rightimg" src={RightImage} alt="" />
           </div>
         </div>
         <div className="box" style={{ display: arrow ? "inline" : "none" }}>
@@ -139,7 +155,7 @@ export default Home;
 
 // <Dialog
 // className="Dialog-box"
-// style={{ color: "#ffffff" }}
+// style={{ color: "#EEEEEE" }}
 // open={open}
 // onClose={handleClose}
 // >
