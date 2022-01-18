@@ -6,7 +6,7 @@ import Icon2 from "../Assets/avatar_icon_3.svg";
 
 const Testimonials = () => {
   useEffect(() => {
-    Aos.init({duration: 500});
+    Aos.init({once: false});
   }, []);
   return (
     <div className="test-container">
@@ -15,7 +15,7 @@ const Testimonials = () => {
         data-aos-anchor-placement="top-bottom">Testimonials</h1>
         <div className="tests">
           {/*1st Testimonial */}
-          <div className="maintest" data-aos="fade-left">
+          <div className="maintest" data-aos="fade-up">
             <div className="test">
               <div className="image1">
                 <img src={Icon1} alt="" />
@@ -33,7 +33,7 @@ const Testimonials = () => {
             </div>
           </div>
           {/*2nd Testimonial */}
-          <div className="maintest" data-aos="fade-right" data-aos-once="false">
+          <div className="maintest" data-aos="fade-up">
             <div className="teste">
               <div className="image1">
                 <img src={Icon2} alt="" />
@@ -51,7 +51,7 @@ const Testimonials = () => {
             </div>
           </div>
           {/*3rd Testimonial */}
-          <div className="maintest" data-aos="fade-left">
+          <div className="maintest" data-aos="fade-up">
             <div className="test">
               <div className="image1">
                 <img src={Icon1} alt="" />
@@ -69,7 +69,7 @@ const Testimonials = () => {
             </div>
           </div>
           {/*4th Testimonial */}
-          <div className="maintest" data-aos="fade-right">
+          <div className="maintest" data-aos="fade-up">
             <div className="teste">
               <div className="image1">
                 <img src={Icon2} alt="" />
