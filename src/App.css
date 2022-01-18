@@ -1458,7 +1458,7 @@ textarea:focus~.bar:after {
     max-width: 95%;
     margin: auto;
     font-size: 22px;
-    padding: 30px 40px 40px 40px;
+    padding: 30px 20px 40px 20px;
     line-height: 30px;
   }
 }
@@ -1542,7 +1542,7 @@ textarea:focus~.bar:after {
   margin: auto;
   font-size: 25px;
   font-weight: 400;
-  font-family: 'Lato';
+  font-family: 'Nunito';
   color: #e2e2e2;
   background: #00ADB506;
   border-radius: 2px;
@@ -1555,7 +1555,49 @@ textarea:focus~.bar:after {
 .services-text:hover {
   background: #00ADB510;
 }
+@media (max-width:765px) {
+  .services-container {
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+  }
 
+  .services-title {
+    margin: 10px 0 40px 0;
+  }
+
+  .services-text {
+    max-width: 95%;
+    margin: auto;
+    font-size: 22px;
+    padding: 30px 20px 40px 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width:620px) {
+  .services-title {
+    font-size: 25px;
+    margin: 10px 0 40px 0;
+  }
+  .services-title::after {
+    width: 100px;
+  }
+
+  .services-text {
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width:480px) {
+
+  .services-text {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 40px 20px 40px 20px;
+  }
+}
 /*  */
 /*  */
 /*  */
@@ -1760,6 +1802,14 @@ textarea:focus~.bar:after {
 }
 
 @media (max-width:769px) {
+  .WCU-title {
+    font-size: 25px;
+    margin: 70px 0 50px 0;
+  }
+  .WCU-title::after {
+    width: 200px;
+    height: 1px;
+  }
   .why-container {
     width: 100%;
     height: auto;
@@ -1782,7 +1832,7 @@ textarea:focus~.bar:after {
   }
 }
 
-@media (max-width:360px) {
+@media (max-width:450px) {
   .point {
     display: flex;
     flex-direction: column;
@@ -1791,6 +1841,26 @@ textarea:focus~.bar:after {
     max-width: 90%;
     margin: auto;
     height: auto;
+  }
+  
+.point h1 {
+  font-size: 22px;
+  color: var(--textcolor);
+  text-align: center;
+  font-family: "Poppins";
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.point P {
+  font-size: 20px;
+  padding: 0 10px;
+}
+}
+@media (max-width:370px) {
+  .point P {
+    font-size: 18px;
+    padding: 0 5px;
   }
 }
 

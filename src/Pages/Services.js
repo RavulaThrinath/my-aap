@@ -17,7 +17,7 @@ const Services = () => {
       >
         <h1 className="services-text">
           <h1 className="services-title">services</h1>
-          we <strong>NSP Stacks Solutions</strong> are indulged in offering
+          We <strong>NSP Stacks Solutions</strong> are indulged in offering
           investment advisory. we are investing clients investment in a right
           path and delivering the decent profits to them. Being a specialist in
           investing, we are effeciently working to deliver superior results in
