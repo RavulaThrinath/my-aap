@@ -731,10 +731,11 @@ B .box {
 }
 
 .left3 {
-  max-width: 25%;
   display: flex;
-  justify-content: space-between;
   margin: 60px 0 40px 30px;
+}
+.left3 a {
+  margin-right:30px;
 }
 
 .container-right {
@@ -872,12 +873,12 @@ textarea:focus~.bar:after {
   font-size: 18px;
   background: var(--primarycolor);
   color: white;
-  padding: 0.7em 2em;
-  padding-left: 1.9em;
+  padding: 0.7em 3em;
+  padding-left: 2.9em;
   display: flex;
   align-items: center;
   border: none;
-  border-radius: 16px;
+  border-radius: 10px;
   overflow: hidden;
   transition: all 0.2s;
 }
@@ -939,6 +940,10 @@ textarea:focus~.bar:after {
     flex-direction: column;
     gap: 25px;
     margin: 50px 0 0 30px;
+  }
+  .Send-button {
+    padding: 0.7em 4em;
+    padding-left: 3.9em;
   }
 }
 
@@ -1014,13 +1019,6 @@ textarea:focus~.bar:after {
     color: var(--textcolor);
   }
 
-  .left3 {
-    max-width: 50%;
-    display: flex;
-    justify-content: space-between;
-    margin: 60px 0 40px 30px;
-  }
-
   .container-right {
     padding: 20px;
   }
@@ -1062,19 +1060,10 @@ textarea:focus~.bar:after {
     width: 100%;
   }
 
-  .Send-button {
-    width: 90%;
-    height: 45px;
-    color: #e6e6e6;
-    background: #818181;
-    font-size: 17px;
-    font-family: "Outfit";
-    border: 2px solid #818181;
-    transition: .3s ease-in-out;
-  }
+  
 }
 
-@media (max-width:380px) {
+@media (max-width:360px) {
 
   input,
   textarea {
@@ -1106,17 +1095,6 @@ textarea:focus~.bar:after {
     position: relative;
     display: block;
     width: 250px;
-  }
-
-  .Send-button {
-    width: 90%;
-    height: 45px;
-    color: #e6e6e6;
-    background: #818181;
-    font-size: 17px;
-    font-family: "Outfit";
-    border: 2px solid #818181;
-    transition: .3s ease-in-out;
   }
 }
 

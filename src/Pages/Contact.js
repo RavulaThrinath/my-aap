@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import {
   FaPhoneAlt,
-  FaTwitter,
   FaEnvelope,
-  FaInstagramSquare,
-  FaWhatsappSquare,
   FaMapMarkerAlt,
+  FaTwitter
 } from "react-icons/fa";
+import { RiInstagramFill } from "react-icons/ri";
+import { IoLogoWhatsapp } from "react-icons/io";
 import Form from "../Components/Form";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -67,7 +67,7 @@ const Contact = () => {
           </div>
           <div className="left3">
             <a href={instaURL} target="_blank" rel="noopener noreferrer">
-              <FaInstagramSquare
+              <RiInstagramFill
                 style={{ color: "#EEEEEE", width: "16px", height: "16px" }}
               />
             </a>
@@ -77,7 +77,7 @@ const Contact = () => {
               />
             </a>
             <a href={whtasappURL} target="_blank" rel="noopener noreferrer">
-              <FaWhatsappSquare
+              <IoLogoWhatsapp
                 style={{ color: "#EEEEEE", width: "16px", height: "16px" }}
               />
             </a>
