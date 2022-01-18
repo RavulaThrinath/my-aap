@@ -199,6 +199,10 @@
 /*  */
 /*  */
 /*  */
+
+.landing {
+  scroll-behavior: smooth;
+}
 .Home {
   position: relative;
   width: 100%;
@@ -208,8 +212,8 @@
 
 .home-content {
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, 40%);
+  left: 50% !important;
+  transform: translate(-50%, 40%) !important;
   width: 100%;
   display: flex;
   justify-content: space-evenly;

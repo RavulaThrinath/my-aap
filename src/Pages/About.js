@@ -1,23 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Teams from "../Components/Teams";
-import ScrollReveal from "scrollreveal";
 
 function About() {
-  ScrollReveal().reveal(".services-title", {
-    reset: true,
-    delay: 200,
-    origin: "top",
-    distance: "50px",
-  });
-  ScrollReveal().reveal(".tessst", {
-    reset: true,
-    delay: 200,
-    origin: "right",
-    distance: "50px",
-  });
+ 
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div>
-      <div className="about-container">
+      <div
+        className="about-container"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      >
         <h1 className="about-text">
           <h1 className="services-title">About US</h1>
           <p className="tessst">

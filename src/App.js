@@ -9,6 +9,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Preloader from "./Components/Preloader"
 import Scroll from "../src/Components/ScrollTop"
+
 import "./App.css";
 
 function App() {

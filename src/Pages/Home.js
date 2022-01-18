@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import RightImage from "../Assets/Right Image.png";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
@@ -13,7 +13,8 @@ import Testimonials from "../Pages/Testimonials";
 import Quotes from "../Components/Quotes";
 import WhyWe from "../Components/WhyWe";
 import Teams from "../Components/Teams";
-import ScrollReveal from "scrollreveal";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 //
 //
@@ -58,22 +59,9 @@ BootstrapDialogTitle.propTypes = {
 };
 
 const Home = () => {
-
-  ScrollReveal().reveal(".Main-title1", {
-    delay: 200,
-    origin: "left",
-    distance: "80px",
-  });
-  ScrollReveal().reveal(".Main-title2", {
-    delay: 250,
-    origin: "left",
-    distance: "80px",
-  });
-  ScrollReveal().reveal(".Main-title3", {
-    delay: 300,
-    origin: "left",
-    distance: "80px"
-  });
+  useEffect(() => {
+    Aos.init({duration: 2000});
+  }, []);
 
   // Down Arrows
   const [arrow, setArrow] = useState(true);
@@ -98,9 +86,9 @@ const Home = () => {
     setOpen(false);
   };
   return (
-    <div>
+    <div className="landing">
       <div className="Home">
-        <div className="home-content">
+        <div className="home-content" data-aos="zoom-out">
           <div className="left">
             <div className="Main-title1">Join the Revolutionary</div>
             <div className="Main-title2">NSP Stacks Solutions</div>

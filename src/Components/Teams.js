@@ -1,27 +1,25 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Team1 from "../Assets/Team1.png";
 import Team2 from "../Assets/Team2.png";
 import Team3 from "../Assets/Team3.png";
-import ScrollReveal from "scrollreveal";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Team = () => {
-  ScrollReveal().reveal(".Team-title", {
-    reset: true,
-    delay: 200,
-    origin: "left",
-    distance: "80px",
-  });
-  ScrollReveal().reveal(".founder", {
-    reset: true,
-    delay: 200,
-    origin: "bottom",
-    distance: "80px",
-  });
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
-      <h1 className="Team-title"> meet the team</h1>
+      <h1
+        className="Team-title"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+      >
+        meet the team
+      </h1>
       <div className="team-list">
-        <div className="founder">
+        <div className="founder" data-aos="fade-right" data-aos-duration="500">
           <div className="img1">
             <img src={Team1} alt="" />
           </div>
@@ -30,7 +28,7 @@ const Team = () => {
             <h3>Founder</h3>
           </div>
         </div>
-        <div className="founder">
+        <div className="founder" data-aos="fade-right" data-aos-duration="800">
           <div className="img1">
             <img src={Team2} alt="" />
           </div>
@@ -39,7 +37,7 @@ const Team = () => {
             <h3>CEO, Co-Founder</h3>
           </div>
         </div>
-        <div className="founder">
+        <div className="founder" data-aos="fade-right" data-aos-duration="1100">
           <div className="img1">
             <img src={Team3} alt="" />
           </div>

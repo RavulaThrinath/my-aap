@@ -1,5 +1,6 @@
-import React from "react";
-// Import Swiper React components
+import React, {useEffect } from "react";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -14,8 +15,11 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 export default function Quotes() {
+  useEffect(() => {
+    Aos.init({duration: 1000});
+  }, []);
   return (
-    <div>
+    <div data-aos="fade-right">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}

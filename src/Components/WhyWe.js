@@ -1,36 +1,42 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Refund from "../Assets/Get Cash.svg";
 import Returns from "../Assets/Account.svg";
 import Customer from "../Assets/Customer.svg";
-import ScrollReveal from 'scrollreveal';
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const WhyWe = () => {
-  ScrollReveal().reveal(".WCU-title", {
-    delay: 300,
-    origin: "left",
-    distance: "50px"
-  });
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <div>
-      <h1 className="WCU-title">Why Choose Us</h1>
+      <h1
+        className="WCU-title"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="700"
+      >
+        Why Choose Us
+      </h1>
       <div className="why-container">
-        <div className="point">
+        <div className="point" data-aos="fade-right" data-aos-duration="500">
           <img src={Returns} alt="" />
           <h1>High Returns</h1>
           <p>
-            Returns matter a lot. We offer strong and high returns as you
-            did not expect.
+            Returns matter a lot. We offer strong and high returns as you did
+            not expect.
           </p>
         </div>
-        <div className="point">
+        <div className="point" data-aos="fade-right" data-aos-duration="800">
           <img src={Refund} alt="" />
           <h1>Return Policy</h1>
           <p>
-            If we failed to deliver your returns, We will pay you 8%
-            interest to your investment.
+            If we failed to deliver your returns, We will pay you 8% interest to
+            your investment.
           </p>
         </div>
-        <div className="point">
+        <div className="point" data-aos="fade-right" data-aos-duration="1100">
           <img src={Customer} alt="" />
           <h1>24x7 Support</h1>
           <p>

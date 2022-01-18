@@ -1,9 +1,20 @@
-import React from "react";
-import { FaPhoneAlt, FaTwitter, FaEnvelope, FaInstagramSquare, FaWhatsappSquare, FaMapMarkerAlt } from "react-icons/fa";
+import React, { useEffect } from "react";
+import {
+  FaPhoneAlt,
+  FaTwitter,
+  FaEnvelope,
+  FaInstagramSquare,
+  FaWhatsappSquare,
+  FaMapMarkerAlt,
+} from "react-icons/fa";
 import Form from "../Components/Form";
-// import emailjs from "emailjs-com";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   const twitterURL =
     "https://twitter.com/Praveen70376822?t=MI1hyxac8XKPxyHkXnhH_g&s=08";
   const instaURL =
@@ -12,10 +23,20 @@ const Contact = () => {
     "https://api.whatsapp.com/send?phone=+91-9100668566&text=Hello!";
   return (
     <div className="Contact-main">
-      <h1 className="contact-title">
+      <h1
+        className="contact-title"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="500"
+      >
         {`Any Question or Remarks? \n Just Write us a Message..`}
       </h1>
-      <div className="form-container">
+      <div
+        className="form-container"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom"
+        data-aos-duration="700"
+      >
         <div className="container-left">
           <div className="left1">
             <div className="left-title">Contact Information</div>
@@ -64,7 +85,6 @@ const Contact = () => {
         </div>
         <div className="container-right">
           <Form />
-          
         </div>
       </div>
     </div>
