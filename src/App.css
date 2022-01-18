@@ -1451,7 +1451,7 @@ textarea:focus~.bar:after {
   }
 
   .about-text {
-    max-width: 90%;
+    max-width: 95%;
     margin: auto;
     font-size: 22px;
     padding: 40px 40px 80px 40px;
@@ -1464,6 +1464,7 @@ textarea:focus~.bar:after {
   .about-text {
     font-size: 20px;
     line-height: 27px;
+    padding: 40px 40px 80px 40px;
   }
 }
 @media (max-width:480px) {
@@ -1471,6 +1472,7 @@ textarea:focus~.bar:after {
   .about-text {
     font-size: 18px;
     line-height: 24px;
+    padding: 40px 20px 80px 20px;
   }
 }
 /* @media (max-width:620px) {
