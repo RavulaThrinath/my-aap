@@ -1450,40 +1450,42 @@ textarea:focus~.bar:after {
     margin-top: 100px;
   }
 
+  .about-title {
+    margin: 10px 0 40px 0;
+  }
+
   .about-text {
     max-width: 95%;
     margin: auto;
     font-size: 22px;
-    padding: 40px 40px 80px 40px;
+    padding: 30px 40px 40px 40px;
     line-height: 30px;
   }
 }
 
 @media (max-width:620px) {
+  .about-title {
+    font-size: 25px;
+    margin: 10px 0 40px 0;
+  }
+  .about-title::after {
+    width: 130px;
+  }
 
   .about-text {
     font-size: 20px;
     line-height: 27px;
-    padding: 40px 40px 80px 40px;
   }
 }
+
 @media (max-width:480px) {
 
   .about-text {
     font-size: 18px;
     line-height: 24px;
-    padding: 40px 20px 80px 20px;
+    padding: 40px 20px 40px 20px;
   }
 }
-/* @media (max-width:620px) {
-
-  .about-text {
-    max-width: 90%;
-    margin: auto;
-    font-size: 20px;
-    line-height: 27px;
-  }
-} */
 
 /*  */
 /*  */
@@ -1685,8 +1687,7 @@ textarea:focus~.bar:after {
 /*  */
 /*  */
 
-.WCU-title,
-.Team-title {
+.WCU-title {
   position: relative;
   font-size: 30px;
   font-family: 'Cinzel', serif;
@@ -1698,8 +1699,7 @@ textarea:focus~.bar:after {
   margin: 100px 0 70px 0;
 }
 
-.WCU-title::after,
-.Team-title::after {
+.WCU-title::after {
   content: "";
   position: absolute;
   top: 110%;
@@ -2058,19 +2058,43 @@ footer p {
 /*  */
 /*  */
 
+.Team-title {
+  position: relative;
+  font-size: 30px;
+  font-family: 'Cinzel', serif;
+  color: var(--textcolor);
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 2px;
+  margin: 100px 0 70px 0;
+}
+
+.Team-title::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 250px;
+  height: 1px;
+  background: linear-gradient(to right, #2D2E32, #636363, #2D2E32);
+}
 
 .team-list {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 100px; */
-  gap: 100px;
 }
 
 .team-list img {
   width: 300px;
   height: 348px;
   border-radius: 5px;
+}
+
+.founder {
+  margin: 0 50px;
 }
 
 .img1 {
@@ -2121,8 +2145,25 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
-    gap: 100px;
+  }
+
+  .founder {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width:760px) {
+  .Team-title {
+    font-size: 25px;
+    margin: 70px 0 30px 0;
+  }
+
+  .Team-title::after {
+    width: 200px;
+  }
+
+  .team-list {
+    gap: 0;
   }
 }
 
