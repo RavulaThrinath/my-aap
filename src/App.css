@@ -308,31 +308,7 @@ B .box {
   }
 }
 
-/* .client-btn {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: var(--textcolor);
-  background: #00ADB5;
-  font-weight: 500;
-  font-family: 'Outfit', sans-serif;
-  border: none;
-  padding: 16px 45px;
-  margin-top: 20px;
-  cursor: pointer;
-  outline: none;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-} */
-
-/* .client-btn:hover {
-  background: #098080;
-  color: var(--textcolor);
-} */
-
 .client-btn {
-
   padding: 16px 32px;
   background-color: transparent;
   border-radius: 10px;
@@ -549,6 +525,17 @@ B .box {
     font-size: 16px;
     line-height: 24px;
     margin-top: 7px;
+  }
+  .client-btn {
+    padding: 11px 25px;
+    font-size: 15px;
+  }
+  .box {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50% -50%);
+    cursor: pointer;
   }
 }
 
