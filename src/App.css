@@ -509,6 +509,17 @@ B .box {
     line-height: 27px;
     margin-top: 7px;
   }
+  .client-btn {
+    padding: 11px 25px;
+    font-size: 15px;
+  }
+  .box {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50% -50%);
+    cursor: pointer;
+  }
 }
 
 @media (max-width:394px) {
@@ -526,17 +537,7 @@ B .box {
     line-height: 24px;
     margin-top: 7px;
   }
-  .client-btn {
-    padding: 11px 25px;
-    font-size: 15px;
-  }
-  .box {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translate(-50% -50%);
-    cursor: pointer;
-  }
+  
 }
 
 /*  */
