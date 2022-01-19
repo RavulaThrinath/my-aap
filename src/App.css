@@ -110,7 +110,7 @@
   width: 100%;
   transform: scaleX(0);
   height: 2px;
-  bottom: -2px;
+  bottom: -3px;
   left: 0;
   background-color: var(--primarycolor);
   transform-origin: bottom right;
@@ -649,7 +649,7 @@
   transform: translate(-50%, -50%);
   width: 350px;
   height: 1px;
-  background: linear-gradient(to right, #2D2E32, #636363, #2D2E32);
+  background: linear-gradient(to right, #222831, #636363, #222831);
 }
 
 .form-container {
@@ -1159,7 +1159,7 @@ textarea:focus~.bar:after {
   transform: translate(-50%, -50%);
   width: 200px;
   height: 1px;
-  background: linear-gradient(to right, #2D2E32, #636363, #2D2E32);
+  background: linear-gradient(to right, #222831, #636363, #222831);
 }
 
 .tests {
@@ -1401,7 +1401,7 @@ textarea:focus~.bar:after {
   transform: translate(-50%, -50%);
   width: 150px;
   height: 1px;
-  background: linear-gradient(to right, #97535341, #636363, #97535341);
+  background: linear-gradient(to right, #222831, #636363, #222831);
 }
 
 .about-text {
@@ -1483,7 +1483,7 @@ textarea:focus~.bar:after {
 /*  */
 /*  */
 /*  */
-/* Services page Ends */
+/* Services page Starts */
 /*  */
 /*  */
 /*  */
@@ -1515,7 +1515,7 @@ textarea:focus~.bar:after {
   transform: translate(-50%, -50%);
   width: 150px;
   height: 1px;
-  background: linear-gradient(to right, #97535341, #636363, #97535341);
+  background: linear-gradient(to right, #222831, #636363, #222831);
 }
 
 .services-text {
@@ -1733,7 +1733,7 @@ textarea:focus~.bar:after {
   transform: translate(-50%, -50%);
   width: 250px;
   height: 1px;
-  background: linear-gradient(to right, #2D2E32, #636363, #2D2E32);
+  background: linear-gradient(to right, #222831, #636363, #222831);
 }
 
 .why-container {
@@ -2135,7 +2135,7 @@ footer p {
   transform: translate(-50%, -50%);
   width: 250px;
   height: 1px;
-  background: linear-gradient(to right, #2D2E32, #636363, #2D2E32);
+  background: linear-gradient(to right, #222831, #636363, #222831);
 }
 
 .team-list {
@@ -2252,7 +2252,7 @@ footer p {
   width: 100%;
   height: 100vh;
   z-index: 10000000;
-  background-color: #2D2E32;
+  background-color: #222831;
   background-image: url(./Assets/Pre.svg);
   background-repeat: no-repeat;
   background-position: center;
