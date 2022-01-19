@@ -22,7 +22,7 @@
   --swiper-navigation-size: 30px !important;
   --primarycolor: #00ADB5;
   --alternatecolor: #393E46;
-  --bgcolor: #222831;
+  --bgcolor: #121923;
   --textcolor: #EEEEEE;
 }
 
@@ -691,7 +691,7 @@
   transform: translate(-50%, -50%);
   width: 350px;
   height: 1px;
-  background: linear-gradient(to right, #222831, #636363, #222831);
+  background: linear-gradient(to right, #121923, #636363, #121923);
 }
 
 .form-container {
@@ -1237,7 +1237,7 @@ textarea:focus~.bar:after {
   transform: translate(-50%, -50%);
   width: 200px;
   height: 1px;
-  background: linear-gradient(to right, #222831, #636363, #222831);
+  background: linear-gradient(to right, #121923, #636363, #121923);
 }
 
 .tests {
@@ -1273,8 +1273,8 @@ textarea:focus~.bar:after {
   max-width: 780px;
   margin: 50px;
   color: #c5c5c5;
-  font-family: "Nunito";
-  font-size: 23px;
+  font-family: "Open Sans";
+  font-size: 22px;
   line-height: 35px;
 }
 
@@ -1323,7 +1323,6 @@ textarea:focus~.bar:after {
   .test-text {
     margin: 40px;
     color: #c5c5c5;
-    font-family: "Lato";
     font-size: 19px;
     line-height: 27px;
   }
@@ -1348,7 +1347,6 @@ textarea:focus~.bar:after {
   .test-text {
     margin: 30px;
     color: #c5c5c5;
-    font-family: "Lato";
     font-size: 18px;
     line-height: 23px;
   }
@@ -1380,7 +1378,6 @@ textarea:focus~.bar:after {
   .test-text {
     margin: 25px;
     color: #c5c5c5;
-    font-family: "Lato";
     font-size: 15px;
     line-height: 22px;
   }
@@ -1407,7 +1404,6 @@ textarea:focus~.bar:after {
   .test-text {
     margin: 20px;
     color: #c5c5c5;
-    font-family: "Lato";
     font-size: 16px;
     line-height: 20px;
   }
@@ -1479,7 +1475,7 @@ textarea:focus~.bar:after {
   transform: translate(-50%, -50%);
   width: 150px;
   height: 1px;
-  background: linear-gradient(to right, #222831, #636363, #222831);
+  background: linear-gradient(to right, #121923, #636363, #121923);
 }
 
 .about-text {
@@ -1487,18 +1483,19 @@ textarea:focus~.bar:after {
   margin: auto;
   font-size: 25px;
   font-weight: 400;
-  font-family: 'Nunito';
+  font-family: 'Open Sans';
   color: #e2e2e2;
-  background: #00ADB506;
-  border-radius: 2px;
+  background: var(--bgcolor);
+  border: 1px solid rgb(41, 51, 66);
+  border-radius: 8px;
   text-align: justify;
-  padding: 40px 120px 80px 120px;
-  line-height: 35px;
+  padding: 20px 60px 60px 60px;
+  line-height:35px;
   transition: .3s ease-in-out;
 }
 
 .about-text:hover {
-  background: #00ADB510;
+  background: #1c2430;
 }
 
 @media (max-width:765px) {
@@ -1593,26 +1590,27 @@ textarea:focus~.bar:after {
   transform: translate(-50%, -50%);
   width: 150px;
   height: 1px;
-  background: linear-gradient(to right, #222831, #636363, #222831);
+  background: linear-gradient(to right, #121923, #636363, #121923);
 }
 
 .services-text {
-  max-width: 75%;
+  max-width: 65%;
   margin: auto;
   font-size: 25px;
   font-weight: 400;
-  font-family: 'Nunito';
+  font-family: 'Open Sans';
   color: #e2e2e2;
-  background: #00ADB506;
-  border-radius: 2px;
+  background: var(--bgcolor);
+  border: 1px solid rgb(41, 51, 66);
+  border-radius: 8px;
   text-align: justify;
-  padding: 40px 120px 80px 120px;
+  padding: 20px 60px 60px 60px;
   line-height: 35px;
   transition: .3s ease-in-out;
 }
 
 .services-text:hover {
-  background: #00ADB510;
+  background: #1c2430;
 }
 
 @media (max-width:765px) {
@@ -1716,7 +1714,7 @@ textarea:focus~.bar:after {
   position: absolute;
   content: " “ ";
   font-family: "News Cycle";
-  color: #00ADB5;
+  color: #6ba5a8;
   font-size: 300px;
   top: 47%;
   left: 50%;
@@ -1738,25 +1736,31 @@ textarea:focus~.bar:after {
 }
 
 @media (max-width:385px) {
+  .linebreak {
+    display: none;
+  }
   .swiper {
     width: 90%;
     height: 30vh;
   }
 
   .swiper-slide {
-    font-size: 20px;
+    padding: 57px;
+    font-size: 17px;
+    line-height: 26px;
   }
 
   .swiper-slide::after {
     position: absolute;
     content: " “ ";
-    color: #924949;
-    font-size: 200px;
-    top: 55%;
-    left: 20%;
+    font-family: "News Cycle";
+    color: #6ba5a883;
+    font-size: 300px;
+    top: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
-    opacity: .5;
+    opacity: .1;
   }
 
   .swiper-button-prev,
@@ -1811,7 +1815,7 @@ textarea:focus~.bar:after {
   transform: translate(-50%, -50%);
   width: 250px;
   height: 1px;
-  background: linear-gradient(to right, #222831, #636363, #222831);
+  background: linear-gradient(to right, #121923, #636363, #121923);
 }
 
 .why-container {
@@ -1825,42 +1829,46 @@ textarea:focus~.bar:after {
 .point {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 320px;
+  align-items: flex-start;
+  justify-content: start;
+  width: 350px;
   height: auto;
-  background: #00ADB508;
+  background: var(--bgcolor);
+  border: 1px solid rgb(41, 51, 66);
   border-radius: 5px;
-  padding: 30px;
+  padding: 25px 30px 25px 25px;
   transition: all .2s ease-in;
-  margin: 0 30px;
-}
+  margin: 0 20px;
+  color: rgb(18, 25, 35);
+} 
 
 .point:hover {
-  background: #00ADB520;
+  background: #1c2430;
   transform: translateY(-5px);
 }
 
 .point img {
-  width: 60px;
-  margin: 10px;
+  width: 40px;
+  margin: 5px;
+  color: #000000;
 }
 
 .point h1 {
-  font-size: 24px;
+  font-size: 22px;
   color: var(--textcolor);
-  text-align: center;
-  font-family: "Poppins";
-  font-weight: 500;
-  margin: 10px 0;
+  font-family: "Open Sans";
+  font-weight: 700;
+  letter-spacing: .4px;
+  margin: 5px 0;
 }
 
 .point P {
   font-size: 20px;
-  color: #c9c9c9;
-  text-align: center;
+  color: #afbaca;
   font-family: "Nunito";
   margin-bottom: 10px;
+  margin-top: 5px;
+  line-height: 27px;
 }
 
 @media (max-width:769px) {
@@ -1887,12 +1895,11 @@ textarea:focus~.bar:after {
   .point {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     max-width: 90%;
     margin: auto;
     height: auto;
+    padding: 25px 35px 25px 25px;
   }
 }
 
@@ -1900,17 +1907,15 @@ textarea:focus~.bar:after {
   .point {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     max-width: 90%;
     margin: auto;
     height: auto;
+    
   }
 
   .point h1 {
     font-size: 22px;
     color: var(--textcolor);
-    text-align: center;
     font-family: "Poppins";
     font-weight: 500;
     margin: 10px 0;
@@ -1918,14 +1923,12 @@ textarea:focus~.bar:after {
 
   .point P {
     font-size: 20px;
-    padding: 0 10px;
   }
 }
 
 @media (max-width:370px) {
   .point P {
     font-size: 18px;
-    padding: 0 5px;
   }
 }
 
@@ -2213,7 +2216,7 @@ footer p {
   transform: translate(-50%, -50%);
   width: 250px;
   height: 1px;
-  background: linear-gradient(to right, #222831, #636363, #222831);
+  background: linear-gradient(to right, #121923, #636363, #121923);
 }
 
 .team-list {
@@ -2244,7 +2247,7 @@ footer p {
   transform: translate(-50%, -50%);
   width: 310px;
   height: 358px;
-  background: #222831;
+  background: #121923;
   opacity: .7;
 }
 
@@ -2330,7 +2333,7 @@ footer p {
   width: 100%;
   height: 100vh;
   z-index: 10000000;
-  background-color: #222831;
+  background-color: #121923;
   background-image: url(./Assets/Pre.svg);
   background-repeat: no-repeat;
   background-position: center;

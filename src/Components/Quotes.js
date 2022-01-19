@@ -23,20 +23,17 @@ export default function Quotes() {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{
-          delay: 3500,
-          disableOnInteraction: false,
-        }}
+        
         pagination={{
           clickable: true,
         }}
         navigation={true}
         className="mySwiper"
       >
-        <SwiperSlide>{`Making money in the stock market \n is much easier than keeping it`}</SwiperSlide>
-        <SwiperSlide>{`The biggest risk of all \n is not taking any Risks.`}</SwiperSlide>
-        <SwiperSlide>{`In short run, Market is a voting machine. \n In long run, It's a weighing machine.`}</SwiperSlide>
-        <SwiperSlide>{`The stock market is a device to transfer \n money from the impatient to the patient.`}</SwiperSlide>
+        <SwiperSlide>Making money in stock market <br className="linebreak" /> is much easier than keeping it</SwiperSlide>
+        <SwiperSlide>The biggest risk of all <br className="linebreak" /> is not taking any Risks.</SwiperSlide>
+        <SwiperSlide>In short run, Market is a voting machine. <br className="linebreak" /> In long run, It's a weighing machine.</SwiperSlide>
+        <SwiperSlide>The stock market is a device to transfer <br className="linebreak" /> money from the impatient to the patient.</SwiperSlide>
       </Swiper>
     </div>
   );

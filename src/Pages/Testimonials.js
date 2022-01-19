@@ -1,18 +1,23 @@
-import React, {useEffect} from "react";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Icon1 from "../Assets/avatar_icon_1.svg";
 import Icon2 from "../Assets/avatar_icon_3.svg";
 
 const Testimonials = () => {
   useEffect(() => {
-    Aos.init({once: false});
+    Aos.init({ once: false });
   }, []);
   return (
     <div className="test-container">
       <div className="test-content">
-        <h1 className="test-title" data-aos="fade-up"
-        data-aos-anchor-placement="top-bottom">Testimonials</h1>
+        <h1
+          className="test-title"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          Testimonials
+        </h1>
         <div className="tests">
           {/*1st Testimonial */}
           <div className="maintest" data-aos="fade-up">
@@ -21,10 +26,11 @@ const Testimonials = () => {
                 <img src={Icon1} alt="" />
               </div>
               <div className="test-text">
-                Since joining the NSP Stacks Solutions and following their
-                advice I have seen some great returns. Thank you NSP Stacks
-                Solutions for teaching me so much and for the gains I have
-                through long term investing.
+                Since joining the{" "}
+                <span style={{ color: "#6ba5a8" }}> NSP Stacks solutions </span>{" "}
+                and following their advice I've seen some great returns. Thank
+                you NSP Stacks Solutions for teaching me so much and for the
+                gains I have through long term investing.
               </div>
             </div>
             <div className="test-name">
@@ -59,8 +65,8 @@ const Testimonials = () => {
               <div className="test-text">
                 One of the best in the advisory space. I Have an overall good
                 experience of their recommendations. I would strongly recommend
-                NSP Stacks solutions to anyone wanting to achieve better
-                financial outcomes.
+                <span style={{ color: "#6ba5a8" }}> NSP Stacks solutions </span>
+                to anyone wanting to achieve better financial outcomes.
               </div>
             </div>
             <div className="test-name">
@@ -76,10 +82,14 @@ const Testimonials = () => {
               </div>
               <div className="test-text">
                 <div className="text1">
-                  First year with the NSP Stacks solutions. Some stocks are up,
-                  some are down. But I learned how to think about investing and
-                  that was well worth the price of admission. Amazing results in
-                  financial growth.
+                  First year with the{" "}
+                  <span style={{ color: "#6ba5a8" }}>
+                    {" "}
+                    NSP Stacks solutions.{" "}
+                  </span>
+                   Some stocks are up, some are down. But I learned how to
+                  think about investing and that was well worth the price of
+                  admission. Amazing results in financial growth.
                 </div>
               </div>
             </div>

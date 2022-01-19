@@ -24,8 +24,7 @@ const WhyWe = () => {
           <img src={Returns} alt="" />
           <h1>High Returns</h1>
           <p>
-            Returns matter a lot. We offer strong and high returns as you did
-            not expect.
+            Returns matter a lot. We offer strong and high returns as you didn't expect.
           </p>
         </div>
         <div className="point" data-aos="fade-right" data-aos-duration="800">

@@ -16,7 +16,7 @@ const ReactParticle = () => {
           autoPlay: true,
           background: {
             color: {
-              value: "#222831",
+              value: "#121923",
             },
           },
           backgroundMask: {
