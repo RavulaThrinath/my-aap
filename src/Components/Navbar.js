@@ -59,7 +59,7 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="hamburger">
-          <Hamburger toggled={click} toggle={setClick} size={25} duration={0.2} />
+          <Hamburger toggled={click} toggle={setClick} size={25} duration={0.1} />
         </div>
       </div>
     </div>
