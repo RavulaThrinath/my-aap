@@ -537,6 +537,13 @@ B .box {
     line-height: 24px;
     margin-top: 7px;
   }
+  .box {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50% -50%);
+    cursor: pointer;
+  }
   
 }
 
