@@ -515,7 +515,7 @@ B .box {
   }
   .box {
     position: absolute;
-    bottom: 40px;
+    bottom: 48px;
     left: 50%;
     transform: translate(-50% -50%);
     cursor: pointer;
