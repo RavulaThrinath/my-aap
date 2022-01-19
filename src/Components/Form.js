@@ -1,22 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import emailjs from "@emailjs/browser";
-import Snackbar from "@mui/material/Snackbar";
-import Alert from "@mui/material/Alert";
+import swal from "sweetalert";
 
-const Form = (props) => {
-  const [snackopen, setSnackOpen] = useState(false);
-
-  const snackbarClick = () => {
-    snackopen(true);
-  };
-
-  const snackbarClose = (event, reason) => {
-    if (reason === "clickaway") {
-      return;
-    }
-
-    setSnackOpen(false);
-  };
+const Form = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -29,10 +15,13 @@ const Form = (props) => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          swal(
+            "Thank you for getting in touch!",
+            "One of our colleagues will get back in touch with you soon!"
+          );
         },
         (error) => {
-          console.log(error.text);
+          swal(error.text);
         }
       );
     e.target.reset();
@@ -65,7 +54,7 @@ const Form = (props) => {
           <span className="bar"></span>
           <label className="required">Message</label>
         </div>
-        <button className="Send-button" onClick={snackbarClick}>
+        <button className="Send-button" variant="outlined">
           <div class="svg-wrapper-1">
             <div class="svg-wrapper">
               <svg
@@ -84,21 +73,6 @@ const Form = (props) => {
           </div>
           <span>Send</span>
         </button>
-        <Snackbar
-          style={{ zIndex: "10000000000000" }}
-          open={snackopen}
-          autoHideDuration={6000}
-          onClose={snackbarClose}
-        >
-          <Alert
-            style={{ zIndex: "10000000000000" }}
-            onClose={snackbarClose}
-            severity="success"
-            sx={{ width: "100%" }}
-          >
-            This is a success message!
-          </Alert>
-        </Snackbar>
       </form>
     </div>
   );
