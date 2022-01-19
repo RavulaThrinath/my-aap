@@ -1830,7 +1830,7 @@ textarea:focus~.bar:after {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: start;
+  justify-content: flex-start;
   width: 350px;
   height: auto;
   background: var(--bgcolor);
