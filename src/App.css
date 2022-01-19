@@ -539,7 +539,7 @@ B .box {
   }
   .box {
     position: absolute;
-    bottom: 70px;
+    bottom: 80px;
     left: 50%;
     transform: translate(-50% -50%);
     cursor: pointer;
