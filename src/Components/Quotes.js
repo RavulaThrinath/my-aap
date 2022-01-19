@@ -23,7 +23,10 @@ export default function Quotes() {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        
+        autoplay={{
+          delay: 3500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}

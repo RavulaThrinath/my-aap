@@ -1745,7 +1745,7 @@ textarea:focus~.bar:after {
   }
 
   .swiper-slide {
-    padding: 57px;
+    padding: 50px;
     font-size: 17px;
     line-height: 26px;
   }
