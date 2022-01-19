@@ -19,7 +19,6 @@
 }
 
 :root {
-  --swiper-navigation-size: 30px !important;
   --primarycolor: #00ADB5;
   --alternatecolor: #393E46;
   --bgcolor: #121923;
@@ -1170,6 +1169,7 @@ textarea:focus~.bar:after {
   background-color: rgb(255, 255, 255);
   border: none !important;
 }
+
 .swal-button {
   padding: 7px 19px;
   border-radius: 2px;
@@ -1178,6 +1178,7 @@ textarea:focus~.bar:after {
   border: 1px solid #00a5ad;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
 }
+
 .swal-text {
   text-align: center;
 }
@@ -1490,7 +1491,7 @@ textarea:focus~.bar:after {
   border-radius: 8px;
   text-align: justify;
   padding: 20px 60px 60px 60px;
-  line-height:35px;
+  line-height: 35px;
   transition: .3s ease-in-out;
 }
 
@@ -1727,18 +1728,17 @@ textarea:focus~.bar:after {
 .swiper-button-prev,
 .swiper-button-next {
   color: #00ADB5 !important;
-  width: calc(var(--swiper-navigation-size)/ 44 * 27) !important;
-  height: (--swiper-navigation-size) !important;
 }
 
 .swiper-pagination-bullet {
-  background: #00ADB5 !important;
+  background: var(--primarycolor) !important;
 }
 
-@media (max-width:385px) {
+@media (max-width:420px) {
   .linebreak {
     display: none;
   }
+
   .swiper {
     width: 90%;
     height: 30vh;
@@ -1763,11 +1763,15 @@ textarea:focus~.bar:after {
     opacity: .1;
   }
 
-  .swiper-button-prev,
+  /* .swiper-button-prev,
   .swiper-button-next {
     color: #00ADB5 !important;
     width: calc(var(--swiper-navigation-size)/ 44 * 27) !important;
     height: var(--swiper-navigation-size) !important;
+  } */
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 20px !important;
   }
 
   .swiper-pagination-bullet {
@@ -1840,7 +1844,7 @@ textarea:focus~.bar:after {
   transition: all .2s ease-in;
   margin: 0 20px;
   color: rgb(18, 25, 35);
-} 
+}
 
 .point:hover {
   background: #1c2430;
@@ -1910,7 +1914,7 @@ textarea:focus~.bar:after {
     max-width: 90%;
     margin: auto;
     height: auto;
-    
+
   }
 
   .point h1 {
