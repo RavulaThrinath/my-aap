@@ -4,6 +4,7 @@ import Returns from "../Assets/Account.svg";
 import Customer from "../Assets/Customer.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import TheTems from "./TheTems";
 
 const WhyWe = () => {
   useEffect(() => {
@@ -44,6 +45,7 @@ const WhyWe = () => {
           </p>
         </div>
       </div>
+      <TheTems />
     </div>
   );
 };

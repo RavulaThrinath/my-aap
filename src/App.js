@@ -7,8 +7,8 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
-import Preloader from "./Components/Preloader"
-import Scroll from "../src/Components/ScrollTop"
+import Preloader from "./Components/Preloader";
+import Scroll from "../src/Components/ScrollTop";
 
 import "./App.css";
 
@@ -20,21 +20,23 @@ function App() {
     }, 1400);
   }, []);
   return (
-    <Router>
-    <Preloader load={load} />
-      <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Navbar />
-        <Scroll />
-        <Routes>
-          <Route exact path="/" element={<Home />}></Route>
-          <Route path="/Services" element={<Services />}></Route>
-          <Route path="/Testimonials" element={<Testimonials />}></Route>
-          <Route path="/About" element={<About />}></Route>
-          <Route path="/Contact" element={<Contact />}></Route>
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+    <div>
+      <Router>
+        <Preloader load={load} />
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
+          <Navbar />
+          <Scroll />
+          <Routes>
+            <Route exact path="/" element={<Home />}></Route>
+            <Route path="/Services" element={<Services />}></Route>
+            <Route path="/Testimonials" element={<Testimonials />}></Route>
+            <Route path="/About" element={<About />}></Route>
+            <Route path="/Contact" element={<Contact />}></Route>
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
+    </div>
   );
 }
 

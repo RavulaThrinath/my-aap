@@ -1,7 +1,9 @@
 import React, { useEffect } from "react";
-import Team1 from "../Assets/Team1.png";
-import Team2 from "../Assets/Team2.png";
-import Team3 from "../Assets/Team3.png";
+// import Team1 from "../Assets/Team1.png";
+// import Team2 from "../Assets/Team2.png";
+import Founder3 from "../Assets/Team3.png";
+import Founder1 from "../Assets/Founder01.png";
+import Founder2 from "../Assets/Founder02.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -21,7 +23,7 @@ const Team = () => {
       <div className="team-list">
         <div className="founder" data-aos="fade-right" data-aos-duration="500">
           <div className="img1">
-            <img src={Team1} alt="" />
+            <img src={Founder1} alt="" />
           </div>
           <div className="Founder-details">
             <h2>N. Sai Prakash Kumar Reddy</h2>
@@ -30,7 +32,7 @@ const Team = () => {
         </div>
         <div className="founder" data-aos="fade-right" data-aos-duration="800">
           <div className="img1">
-            <img src={Team2} alt="" />
+            <img src={Founder2} alt="" />
           </div>
           <div className="Founder-details">
             <h2>N. Sai Praveen Kumar Reddy</h2>
@@ -39,7 +41,7 @@ const Team = () => {
         </div>
         <div className="founder" data-aos="fade-right" data-aos-duration="1100">
           <div className="img1">
-            <img src={Team3} alt="" />
+            <img src={Founder3} alt="" />
           </div>
           <div className="Founder-details">
             <h2>K. Sai Pratap Reddy</h2>

@@ -18,6 +18,11 @@
   box-sizing: border-box;
 }
 
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
 :root {
   --primarycolor: #00ADB5;
   --alternatecolor: #393E46;
@@ -104,17 +109,20 @@
   transition: all .3s ease-in-out;
 }
 
-.links::after {
+.links::after  {
   content: '';
   position: absolute;
   width: 100%;
   transform: scaleX(0);
-  height: 2px;
-  bottom: -3px;
+  height: 1px;
+  bottom: -4px;
   left: 0;
   background-color: var(--primarycolor);
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
+}
+.links:hover {
+  color: var(--primarycolor);
 }
 
 .links:hover::after {
@@ -1254,20 +1262,7 @@ textarea:focus~.bar:after {
 }
 
 .maintest {
-  border-bottom: 1px solid #414141;
-}
-
-.maintest:last-child {
-  border-bottom: none;
-}
-
-.teste {
-  width: 100%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-items: center;
-
+  border-bottom: 1px solid rgba(41, 51, 66, 0.253);
 }
 
 .test-text {
@@ -1289,13 +1284,11 @@ textarea:focus~.bar:after {
   font-size: 17px;
 }
 
-.test-namee {
+.testimonialsa:nth-last-child(1) {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  font-family: "Cormorant Garamond";
-  margin: 0 50px 50px 50px;
 }
 
 .span1 {
@@ -2230,8 +2223,8 @@ footer p {
 }
 
 .team-list img {
-  width: 300px;
-  height: 348px;
+  width: 260px;
+  height: 260px;
   border-radius: 5px;
 }
 
@@ -2243,16 +2236,16 @@ footer p {
   position: relative;
 }
 
-.img1::before {
+.img1::after {
   content: "";
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 310px;
-  height: 358px;
+  width: 300px;
+  height: 270px;
   background: #121923;
-  opacity: .7;
+  opacity: .4;
 }
 
 .Founder-details {
@@ -2265,18 +2258,16 @@ footer p {
 }
 
 .Founder-details h2 {
-  font-family: "Cormorant Garamond";
-  font-size: 25px;
+  font-family: "Open Sans";
+  font-size: 18px;
   font-weight: 600;
-  font-style: italic;
   color: #89b6b6;
 }
 
 .Founder-details h3 {
-  font-family: "Cormorant Garamond";
-  font-size: 20px;
+  font-family: "Open Sans";
+  font-size: 14px;
   font-weight: 200;
-  font-style: italic;
   color: #EEEEEEbd;
   margin: 5px 0;
 }
@@ -2357,6 +2348,28 @@ footer p {
 /*  */
 /*  */
 /* Preloader Page Ends */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* Team Page Ends */
+/*  */
+/*  */
+/*  */
+/*  */
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* Teams Page Ends */
 /*  */
 /*  */
 /*  */
