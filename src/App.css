@@ -260,16 +260,6 @@ ul li {
   font-family: "Lato";
 }
 
-.Main-title1::after,
-.Main-title2::after {
-  content: "";
-  position: absolute;
-  transform: translate(-50%, -50%);
-  background: var(--primarycolor);
-  opacity: .07;
-  z-index: -1;
-}
-
 .Main-title2::after {
   width: 96%;
   height: 30px;
@@ -484,15 +474,6 @@ ul li {
     margin-bottom: 30px;
   }
 
-  .Main-title2::after {
-    width: 0;
-    height: 0;
-  }
-
-  .Main-title1::after {
-    width: 0;
-    height: 0;
-  }
 
 
   /*  */
