@@ -13,6 +13,7 @@ import Testimonials from "../Pages/Testimonials";
 import Quotes from "../Components/Quotes";
 import WhyWe from "../Components/WhyWe";
 import Teams from "../Components/Teams";
+import { Helmet } from "react-helmet";
 
 //
 //
@@ -81,6 +82,17 @@ const Home = () => {
   };
   return (
     <div className="landing">
+      <Helmet>
+        <title>NSP Stacks Solutions</title>
+        <meta
+          name="description"
+          content="We NSP Stacks Solutions are indulged in offering investment advisory. Being a specialist in investing, we are working effeciently to deliver superior results in shorter times."
+        />
+        <meta
+          name="keywords"
+          content="Investing, Stocks, Stock Market, Trading"
+        />
+      </Helmet>
       <div className="Home">
         <div className="home-content">
           <div className="left">
@@ -101,7 +113,8 @@ const Home = () => {
                 id="customized-dialog-title"
                 onClose={handleClose}
               >
-                Interested in Becoming a client ? Enter your details and We will contact you.
+                Interested in Becoming a client ? Enter your details and We will
+                contact you.
               </BootstrapDialogTitle>
               <DialogContent>
                 <DialogContentText></DialogContentText>

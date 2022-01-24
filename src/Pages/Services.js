@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import WhyWe from "../Components/WhyWe";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import {Helmet} from "react-helmet";
 
 const Services = () => {
   useEffect(() => {
@@ -9,6 +10,9 @@ const Services = () => {
   }, []);
   return (
     <div>
+    <Helmet>
+        <title>NSP Stacks Solutions | Services</title>
+        </Helmet>
       <div
         className="services-container"
         data-aos="fade-up"

@@ -9,7 +9,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import Preloader from "./Components/Preloader";
 import Scroll from "../src/Components/ScrollTop";
-
+import { Helmet } from "react-helmet";
 import "./App.css";
 
 function App() {
@@ -24,6 +24,14 @@ function App() {
       <Router>
         <Preloader load={load} />
         <div className="App" id={load ? "no-scroll" : "scroll"}>
+          <Helmet>
+            <title>NSP Stacks Solutions</title>
+            <meta
+              name="description"
+              content="We NSP Stacks Solutions are indulged in offering investment advisory. Being a specialist in investing, we are working effeciently to deliver superior results in shorter times."
+            />
+            <meta name="keywords" content="Investing, Stocks, Stock Market, Trading" />
+          </Helmet>
           <Navbar />
           <Scroll />
           <Routes>

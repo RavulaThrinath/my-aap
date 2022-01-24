@@ -3,6 +3,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import Icon1 from "../Assets/icon01.svg";
 import { Reviews } from "../Data";
+// import { Helmet } from "react-helmet";
 
 const Testimonials = () => {
   const testimonialsList = Reviews.map((person) => (
@@ -27,10 +28,14 @@ const Testimonials = () => {
     Aos.init({ once: false });
   }, []);
   return (
-    <div className="test-container">
-      <div className="test-content">
-        <h1 className="test-title">Testimonials</h1>
-        <div>{testimonialsList}</div>
+    <div>
+      
+      <div className="test-container">
+        <div className="test-content">
+          <h1 className="test-title">Testimonials</h1>
+
+          <div>{testimonialsList}</div>
+        </div>
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import Form from "../Components/Form";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import {Helmet} from "react-helmet";
 
 const Contact = () => {
   useEffect(() => {
@@ -23,6 +24,9 @@ const Contact = () => {
     "https://api.whatsapp.com/send?phone=+91-9100668566&text=Hello!";
   return (
     <div className="Contact-main">
+    <Helmet>
+        <title>NSP Stacks Solutions | Contact Us</title>
+        </Helmet>
       <h1
         className="contact-title"
         data-aos="fade-up"
