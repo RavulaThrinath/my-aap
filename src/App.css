@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
@@ -10,7 +9,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
+@import url(https://fonts.googleapis.com/css?family=Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 * {
   margin: 0;
@@ -1807,8 +1806,8 @@ textarea:focus~.bar:after {
 .point {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   width: 350px;
   height: auto;
   background: var(--bgcolor);
@@ -1824,11 +1823,11 @@ textarea:focus~.bar:after {
   background: #1c2430;
   transform: translateY(-5px);
 }
-
 .point img {
   width: 40px;
   margin: 5px;
   color: #000000;
+  background: #ffffff;
 }
 
 .point h1 {
@@ -1843,7 +1842,7 @@ textarea:focus~.bar:after {
 .point P {
   font-size: 20px;
   color: #afbaca;
-  font-family: "Nunito";
+  font-family: "Open Sans";
   margin-bottom: 10px;
   margin-top: 5px;
   line-height: 27px;
