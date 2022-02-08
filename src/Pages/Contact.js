@@ -66,7 +66,7 @@ const Contact = () => {
               <FaMapMarkerAlt
                 style={{ color: "#EEEEEE", width: "16px", height: "16px" }}
               />{" "}
-              <span>Medchal, Telangana</span>
+              <span>Chennai, Tamilnadu</span>
             </div>
           </div>
           <div className="left3">
