@@ -8,7 +8,7 @@ export const Reviews = [
     id: 0,
     review:
       "Since joining the NSP Stacks solutions and following their advice I have seen some great returns. Thank you NSP Stacks Solutions for teaching me so much and for the gains I have through long term investing.",
-    name: "Mithun",
+    name: "Mithun Siddharth",
     profession: " ",
   },
   {
