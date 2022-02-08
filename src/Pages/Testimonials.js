@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import Icon1 from "../Assets/icon01.svg";
+// import Icon1 from "../Assets/icon01.svg";
+// import Icon1 from "../Assets";
 import { Reviews } from "../Data";
 // import { Helmet } from "react-helmet";
 
@@ -12,7 +13,7 @@ const Testimonials = () => {
         <div className="maintest" data-aos="fade-up">
           <div className="test">
             <div className="image1">
-              <img src={Icon1} alt="" />
+              <img src={require(`../Assets/${person.id}.png`)} alt="" />
             </div>
             <div className="test-text">{person.review}</div>
           </div>
@@ -29,7 +30,6 @@ const Testimonials = () => {
   }, []);
   return (
     <div>
-      
       <div className="test-container">
         <div className="test-content">
           <h1 className="test-title">Testimonials</h1>

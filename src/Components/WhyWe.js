@@ -22,14 +22,14 @@ const WhyWe = () => {
       </h1>
       <div className="why-container">
         <div className="point" data-aos="fade-right" data-aos-duration="500">
-          <img src={Returns} alt="" />
+          <img className="returns" src={Returns} alt="" />
           <h1>High Returns</h1>
           <p>
             Returns matter a lot. We offer strong and high returns as you didn't expect.
           </p>
         </div>
         <div className="point" data-aos="fade-right" data-aos-duration="800">
-          <img src={Refund} alt="" />
+          <img className="returns" src={Refund} alt="" />
           <h1>Return Policy</h1>
           <p>
             If we failed to deliver your returns, We will pay you 8% interest to
@@ -37,7 +37,7 @@ const WhyWe = () => {
           </p>
         </div>
         <div className="point" data-aos="fade-right" data-aos-duration="1100">
-          <img src={Customer} alt="" />
+          <img className="returns" src={Customer} alt="" />
           <h1>24x7 Support</h1>
           <p>
             Direct connection matter, so 24/7 phone support will be available
