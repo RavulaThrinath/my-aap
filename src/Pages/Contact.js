@@ -45,7 +45,7 @@ const Contact = () => {
           <div className="left1">
             <div className="left-title">Contact Information</div>
             <div className="left-subtitle">
-              Fill up the form and our team will <br /> get back to you within
+              Fillthe form and our team will <br /> get back to you within
               24 hours
             </div>
           </div>
