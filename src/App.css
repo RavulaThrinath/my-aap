@@ -108,7 +108,7 @@ ul li {
   transition: all .3s ease-in-out;
 }
 
-.links::after  {
+.links::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -120,6 +120,7 @@ ul li {
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
+
 .links:hover {
   color: var(--primarycolor);
 }
@@ -1284,7 +1285,9 @@ textarea:focus~.bar:after {
 }
 
 .image1 img {
-  width: 60px;
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
 }
 
 @media (max-width:769px) {
@@ -1823,11 +1826,14 @@ textarea:focus~.bar:after {
   background: #1c2430;
   transform: translateY(-5px);
 }
-.point img {
-  width: 40px;
-  margin: 5px;
+
+.returns {
+  width: 80px;
+  margin: 10px;
   color: #000000;
-  background: #ffffff;
+  padding: 15px;
+  background-color: #00a5ad15;
+  border-radius: 100px;
 }
 
 .point h1 {
@@ -1843,6 +1849,7 @@ textarea:focus~.bar:after {
   font-size: 20px;
   color: #afbaca;
   font-family: "Open Sans";
+  text-align: center;
   margin-bottom: 10px;
   margin-top: 5px;
   line-height: 27px;
