@@ -21,15 +21,7 @@ const Team = () => {
         meet the team
       </h1>
       <div className="team-list">
-        <div className="founder" data-aos="fade-right" data-aos-duration="500">
-          <div className="img1">
-            <img src={Founder1} alt="" />
-          </div>
-          <div className="Founder-details">
-            <h2>N. Sai Prakash Kumar Reddy</h2>
-            <h3>Founder</h3>
-          </div>
-        </div>
+        
         <div className="founder" data-aos="fade-right" data-aos-duration="800">
           <div className="img1">
             <img src={Founder2} alt="" />
