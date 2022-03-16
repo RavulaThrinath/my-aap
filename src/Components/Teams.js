@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 // import Team1 from "../Assets/Team1.png";
 // import Team2 from "../Assets/Team2.png";
 import Founder3 from "../Assets/Team3.png";
-import Founder1 from "../Assets/Founder01.png";
 import Founder2 from "../Assets/Founder02.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
