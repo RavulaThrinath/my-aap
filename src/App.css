@@ -2210,8 +2210,9 @@ footer p {
 }
 
 .team-list img {
-  width: 260px;
-  height: 260px;
+  display: block;
+  width: 300px;
+  height: 100%;
   border-radius: 5px;
 }
 
@@ -2223,7 +2224,7 @@ footer p {
   position: relative;
 }
 
-.img1::after {
+/* .img1::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -2233,7 +2234,7 @@ footer p {
   height: 270px;
   background: #121923;
   opacity: .4;
-}
+} */
 
 .Founder-details {
   display: flex;
